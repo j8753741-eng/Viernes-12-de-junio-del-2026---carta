@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Pecado Favorito</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    background:
+    radial-gradient(circle at top, rgba(165,94,234,0.25), transparent 40%),
+    radial-gradient(circle at bottom, rgba(255,112,166,0.20), transparent 40%),
+    linear-gradient(135deg,#080511,#13091d,#1f0d2f,#120818);
+    overflow-x:hidden;
+    font-family:'Cormorant Garamond',serif;
+    color:#fff;
+    padding:40px 20px;
+}
+
+/* Estrellas */
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background-image:
+    radial-gradient(2px 2px at 20% 30%, rgba(255,255,255,.8), transparent),
+    radial-gradient(1.5px 1.5px at 70% 20%, rgba(255,255,255,.7), transparent),
+    radial-gradient(2px 2px at 80% 75%, rgba(255,255,255,.7), transparent),
+    radial-gradient(1px 1px at 35% 85%, rgba(255,255,255,.8), transparent);
+    pointer-events:none;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+}
+
+.letter{
+    position:relative;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:35px;
+    padding:70px 50px;
+    box-shadow:
+    0 0 50px rgba(181,125,255,0.25),
+    0 0 120px rgba(255,80,180,0.12);
+}
+
+.corner{
+    position:absolute;
+    font-size:40px;
+    color:rgba(255,192,240,.8);
+}
+
+.corner:nth-child(1){
+    top:20px;
+    left:25px;
+}
+
+.corner:nth-child(2){
+    top:20px;
+    right:25px;
+}
+
+.corner:nth-child(3){
+    bottom:20px;
+    left:25px;
+}
+
+.corner:nth-child(4){
+    bottom:20px;
+    right:25px;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.title h1{
+    font-family:'Great Vibes',cursive;
+    font-size:5rem;
+    color:#ffd9f7;
+    text-shadow:
+    0 0 10px #ffb5ea,
+    0 0 25px #ff90db;
+}
+
+.subtitle{
+    text-align:center;
+    letter-spacing:4px;
+    color:#d7c7ff;
+    font-family:'Montserrat',sans-serif;
+    font-size:.9rem;
+    margin-bottom:50px;
+}
+
+.content{
+    font-size:1.7rem;
+    line-height:2.2rem;
+    color:#fff8fd;
+}
+
+.content p{
+    margin-bottom:30px;
+    text-align:justify;
+}
+
+.content strong{
+    color:#ffd2f3;
+    font-weight:700;
+}
+
+.signature{
+    margin-top:50px;
+    text-align:right;
+}
+
+.signature p{
+    margin:5px 0;
+}
+
+.signature .name{
+    font-family:'Great Vibes',cursive;
+    font-size:3rem;
+    color:#ffd6fa;
+}
+
+/* Frase neón */
+.neon-love{
+    margin-top:70px;
+    text-align:center;
+    font-size:2rem;
+    line-height:2.8rem;
+    color:#d89bff;
+    font-family:'Great Vibes',cursive;
+
+    text-shadow:
+    0 0 5px #c16fff,
+    0 0 15px #c16fff,
+    0 0 30px #c16fff,
+    0 0 60px #8e3dff,
+    0 0 90px #8e3dff;
+}
+
+/* Botón */
+.poem-btn{
+    display:flex;
+    justify-content:center;
+    margin-top:60px;
+}
+
+.poem-btn a{
+    text-decoration:none;
+    background:linear-gradient(135deg,#b75cff,#ff6bb5);
+    color:white;
+    padding:18px 40px;
+    border-radius:50px;
+    font-family:'Montserrat',sans-serif;
+    font-weight:500;
+    letter-spacing:1px;
+    transition:.4s;
+    box-shadow:
+    0 0 20px rgba(183,92,255,.5),
+    0 0 40px rgba(255,107,181,.3);
+}
+
+.poem-btn a:hover{
+    transform:translateY(-5px) scale(1.03);
+    box-shadow:
+    0 0 30px rgba(183,92,255,.8),
+    0 0 60px rgba(255,107,181,.5);
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="letter">
+
+        <div class="corner">♡</div>
+        <div class="corner">✧</div>
+        <div class="corner">❀</div>
+        <div class="corner">♡</div>
+
+        <div class="title">
+            <h1>MI PECADO FAVORITO</h1>
+        </div>
+
+        <div class="subtitle">
+            UNA CARTA ESCRITA PARA LA NOCHE DEL VIERNES 12 DE JUNIO DE 2026
+        </div>
+
+        <div class="content">
+
+            <p><strong>Mi amor hermoso,</strong></p>
+
+            <p>
+            Esta noche de viernes, 12 de junio de 2026, mientras la oscuridad cubre el mundo y el silencio parece envolverlo todo, vuelvo a descubrir que eres el pensamiento más constante de mi vida. No importa cuántas veces intente describir lo que siento por ti; siempre me quedo corto, porque lo que despiertas en mí es demasiado grande para caber en unas cuantas palabras.
+            </p>
+
+            <p>
+            Eres mi calma y mi tormenta. El refugio al que quiero regresar después de los días difíciles y, al mismo tiempo, la tentación más deliciosa que ha conocido mi corazón. Hay algo peligrosamente hermoso en ti: tu sonrisa que desarma todas mis defensas, tu mirada que me hace perder la razón y esa manera única de existir que convierte cualquier instante ordinario en un recuerdo inolvidable.
+            </p>
+
+            <p>
+            Esta noche quiero confesarte que te amo con una intensidad que a veces me asusta. Te amo en tu dulzura, en tus ocurrencias, en tu manera de cuidarme y también en esa chispa traviesa que aparece cuando solo somos tú y yo, cuando el mundo desaparece y lo único importante es sentirnos cerca.
+            </p>
+
+            <p>
+            Y sí... debo admitir que hay una parte de mí que se vuelve completamente tuya cuando imagino tus abrazos prolongándose un poco más, tus besos robándome el aliento y tus caricias despertando cada rincón de mi piel y de mi alma. Eres mi debilidad favorita, el deseo que jamás quiero combatir, el incendio que elegiría atravesar una y otra vez solo por sentir el privilegio de amarte.
+            </p>
+
+            <p>
+            Pero por encima de toda pasión, de toda locura y de todo anhelo, lo que más amo es la mujer que eres. La mujer que llena mis días de esperanza, que hace latir mi corazón con más fuerza y que me recuerda que el amor verdadero no es perfecto: es auténtico, profundo y capaz de elegirse todos los días.
+            </p>
+
+            <p>
+            Quiero seguir descubriéndote en cada conversación hasta la madrugada, seguir soñando contigo, riendo contigo, abrazándote después de los días malos y celebrando contigo los buenos. Quiero ser el lugar donde siempre encuentres amor, admiración y deseo; el hombre que nunca deje de mirarte como si fueras el milagro más hermoso que le regaló la vida.
+            </p>
+
+            <p>
+            Gracias por existir. Gracias por ser mi amor, mi inspiración, mi paz y también mi pecado favorito.
+            </p>
+
+            <p>
+            Y si esta noche tuviera un último deseo antes de que las estrellas se apaguen, sería acercarme a ti, tomar tu rostro entre mis manos, besarte lentamente y susurrarte al oído que, entre todas las historias posibles, volvería a elegirte a ti… una y mil veces más.
+            </p>
+
+            <p>
+            Porque te amo con ternura infinita, con pasión desbordada y con un corazón que será tuyo incluso cuando el tiempo aprenda a pronunciar nuestro nombre.
+            </p>
+
+            <p>
+            <strong>Buenas noches, mi amor. Sueña conmigo, porque yo jamás dejo de soñar contigo.</strong>
+            </p>
+
+        </div>
+
+        <div class="signature">
+            <p><strong>Con todo mi amor,</strong></p>
+            <p class="name">Tu eterno enamorado.</p>
+        </div>
+
+        <div class="neon-love">
+            Y mientras esta noche guarda nuestros suspiros entre las estrellas,
+            mi corazón anhela profundamente que llegue el día de mañana para
+            poder hacer realidad, de la mejor manera posible, nuestro tan esperado
+            Plan A; porque no existe sueño más hermoso que construir instantes
+            inolvidables a tu lado, amarte con más intensidad que ayer y demostrarte,
+            una vez más, que elegirte será siempre la decisión más preciosa de mi vida.
+            Con toda mi ilusión, mi esperanza y mi amor infinito para ti,
+            <strong>VALERIA PETRO VILLAZÓN.</strong>
+        </div>
+
+        <div class="poem-btn">
+            <a href="TU_ENLACE_DEL_POEMA" target="_blank">
+                ✨ Abrir el poema de esta noche ✨
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+  </html>
